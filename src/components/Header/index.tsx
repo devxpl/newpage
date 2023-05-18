@@ -18,7 +18,7 @@ export const HeaderPage = () => {
       <div className="flex pr-20 md:pr-0 xsm:pr-0">
         <button
           type="button"
-          className="text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600 "
+          className="text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg viewBox="0 0 30 30" className="h-20 w-20 fill-current">
@@ -50,7 +50,7 @@ export const HeaderPage = () => {
       <nav
         className={`${
           isOpen ? 'block' : 'hidden'
-        }  absolute  top-20 p-5 transition transform origin-top-right md-hidden flex flex-col justify-end items-end bg-cyan-600`}
+        }  absolute  top-20 p-5 transition transform origin-top-right md-hidden flex flex-col justify-end items-end bg-cyan-600 cursor-pointer`}
       >
         <a
           className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-blue-300 w-28"
@@ -59,7 +59,7 @@ export const HeaderPage = () => {
           Inicio
         </a>
         <a
-          className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-300 w-28"
+          className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-300 w-28 "
           onClick={() => void handleClick('/orcamento')}
         >
           Orçamentos
