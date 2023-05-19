@@ -4,6 +4,7 @@ module.exports = {
   media: false,
   theme: {
     screens: {
+      'xxsm': '300px',
       'xsm': '320px',
       'tablet': '640px',
       'laptop': '1024px',

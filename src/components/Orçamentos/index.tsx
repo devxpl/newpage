@@ -44,12 +44,8 @@ const Form = () => {
 
   return (
     <>
-      <section>
-        <h1 className=" flex justify-center relative z-20 xsm:mt-36 desktop:mt-5 font-mono border-l-slate-950 text-2xl">
-          Faça Agora Seu Orçamento!
-        </h1>
-      </section>
       <form onSubmit={handleSubmit} className="">
+        <h1>Faça seu Orçamento</h1>
         <div className="mb-4 mt-28  w-64 flex justify-center mx-auto">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="nome">
             Nome:
