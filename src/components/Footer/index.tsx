@@ -1,9 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="z-10 py-4 desktop:mt-0 laptop:mt-20 4k:mt-0 tablet:mt-20 hidden desktop:block">
+    <footer className="py-4 desktop:mt-0 laptop:mt-20 4k:mt-0 tablet:mt-20  desktop:block bg-cyan-600">
       <div className="flex justify-center">
-        <h3 className="text-blue-400 font-bold mb-4">Contatos</h3>
-        <ul className="text-gray-400">
+        <ul className="text-gray-700">
           <li className="inline-block pl-2">
             <a href="https://www.facebook.com/profile.php?id=100074426386381">
               <i className="fab fa-facebook"></i> Facebook

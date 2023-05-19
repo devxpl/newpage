@@ -14,7 +14,7 @@ export const HeaderPage = () => {
   }
 
   return (
-    <section className="flex items-center fixed top-0 w-full z-10 bg-cyan-600">
+    <section className="flex items-center top-0 w-full  bg-cyan-600">
       <div className="flex pr-20 md:pr-0 xsm:pr-0">
         <button
           type="button"

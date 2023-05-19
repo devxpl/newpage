@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import Image from 'next/image';
 const Form = () => {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
@@ -44,8 +44,18 @@ const Form = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="">
-        <h1>Faça seu Orçamento</h1>
+      <div className=" flex justify-center items-center">
+        <Image
+          src="/assets/4.jpg"
+          alt="Descrição da imagem"
+          width={300}
+          height={300}
+        />
+      </div>
+      <form onSubmit={handleSubmit} className=" h-screen">
+        <h1 className="items-center justify-center flex font-mono font-extrabold pt-24">
+          Faça seu Orçamento
+        </h1>
         <div className="mb-4 mt-28  w-64 flex justify-center mx-auto">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="nome">
             Nome:
