@@ -33,7 +33,6 @@ const HomePage = () => {
                   width={400}
                   height={400}
                   autoPlay
-                  muted
                   loop
                 />
               </div>

@@ -17,7 +17,7 @@ const Form = () => {
     };
 
     if (typeof window !== 'undefined') {
-      fetch('http://localhost:3001/emails/emailSend', {
+      fetch('', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
