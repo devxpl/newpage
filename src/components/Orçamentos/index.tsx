@@ -43,7 +43,7 @@ const Form = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className=" h-screen bg-cyan-600">
+      <form onSubmit={handleSubmit} className=" h-screen">
         <div className="mb-4 mt-28  w-64 flex justify-center mx-auto">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="nome">
             Nome:

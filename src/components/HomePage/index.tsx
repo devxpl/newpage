@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-cyan-700">
+    <div className="flex flex-col items-center justify-center h-screen ">
       <h1 className="text-4xl font-bold text-gray-800 mb-4 font-mono iphone11:hidden desktop:block">
         Serviços de Limpeza Profissional
       </h1>
