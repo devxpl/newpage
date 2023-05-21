@@ -50,28 +50,28 @@ export const HeaderPage = () => {
       <nav
         className={`${
           isOpen ? 'block' : 'hidden'
-        }  absolute  top-20 p-5 transition transform origin-top-right md-hidden flex flex-col justify-end items-end bg-cyan-600 cursor-pointer`}
+        }  absolute  top-20 p-5 transition transform origin-top-right md-hidden flex flex-col justify-end items-end bg-gray-800 cursor-pointer`}
       >
         <a
-          className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-blue-300 w-28"
+          className="px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-gray-900 hover:bg-blue-300 w-28"
           onClick={() => void handleClick('/')}
         >
           Inicio
         </a>
         <a
-          className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-300 w-28 "
+          className="px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-blue-300 w-28 "
           onClick={() => void handleClick('/orcamento')}
         >
           Orçamentos
         </a>
         <a
-          className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-300 w-28"
+          className="px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-blue-300 w-28"
           onClick={() => void handleClick('/empresa')}
         >
           Empresa
         </a>
         <a
-          className="px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-300 w-28"
+          className="px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:bg-blue-300 w-28"
           onClick={() => void handleClick('/produtos')}
         >
           Produtos

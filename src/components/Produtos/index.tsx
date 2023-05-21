@@ -6,7 +6,7 @@ const ListProduct = () => {
       name: 'Nero Limpa Pisos 5l',
       description:
         'Este Produto é Especial, Limpa Seu Piso Encardido Com Facilidade.',
-      price: 150,
+      price: 300,
       image: '/assets/limpa.png',
     },
     {
@@ -14,7 +14,7 @@ const ListProduct = () => {
       name: 'Nero Limpa Pedras 5l',
       description:
         'Limpa Pedra Encardida (Miracema, Portuguesa, São tomé) Com Facilidade. Você Alcançará Um Exelente Resultado!',
-      price: 150,
+      price: 300,
       image: '/assets/limpa1.png',
     },
     {
@@ -22,7 +22,7 @@ const ListProduct = () => {
       name: 'Nero Limpa Pisos 1l',
       description:
         'Embalagem Economica Para Pequenos Reparos ou Testes de Eficacia do Produto',
-      price: 40,
+      price: 150,
       image: '/assets/limpapiso1l.png',
     },
     {
@@ -30,7 +30,7 @@ const ListProduct = () => {
       name: 'Nero Limpa Pedras 1l',
       description:
         'Embalagem Economica Para Pequenos Reparos ou Testes de Eficacia do Produto',
-      price: 40,
+      price: 150,
       image: '/assets/limpa1l.png',
     },
     {
@@ -46,7 +46,7 @@ const ListProduct = () => {
       name: 'Nero Tira Manchas',
       description:
         'Está Com Aquela Manchinha Desagradável No Seu estofado? Esse Produto Resolve Seu Problema',
-      price: 59.9,
+      price: 89.9,
       image: '/assets/mancha.png',
     },
     {
@@ -54,7 +54,7 @@ const ListProduct = () => {
       name: 'Mascara Respirador 1/4 Facial',
       description:
         'TAMANHO: Único Compõe 1 Mascara e 1 Cartucho ALLTEC CMC Filtro Químico, Vapores Orgânicos e Gases Ácidos',
-      price: 49.9,
+      price: 289.9,
       image: '/assets/mascara.png',
     },
     {
@@ -62,7 +62,7 @@ const ListProduct = () => {
       name: 'Luva NeoLátex Com Reforço CA 5774',
       description:
         'Luva De Segurança Confeccionada em látex (Borracha Natural) e Policloropreno (Neoprene) Na Palma e Dorso.',
-      price: 24.8,
+      price: 34.9,
       image: '/assets/luva.png',
     },
   ];
