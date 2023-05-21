@@ -19,6 +19,7 @@ module.exports = {
       },
     },
     screens: {
+      'iphone11': '360px',
       'xxsm': '300px',
       'xsm': '320px',
       'tablet': '640px',

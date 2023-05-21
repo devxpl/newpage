@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="py-4 desktop:mt-0 laptop:mt-20 4k:mt-0 tablet:mt-20  desktop:block bg-cyan-600">
+    <footer className="py-5 desktop:mt-0 4k:mt-0 desktop:block bg-cyan-600 absolute w-screen">
       <div className="flex justify-center">
         <ul className="text-gray-700">
           <li className="inline-block pl-2">
