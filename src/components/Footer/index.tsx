@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="py-5 desktop:mt-0 4k:mt-0 desktop:block bg-cyan-600 absolute w-screen">
+    <footer className="py-5 desktop:mt-0 4k:mt-0 desktop:block flex justify-center">
       <div className="flex justify-center">
         <ul className="text-gray-700">
           <li className="inline-block pl-2">
@@ -15,7 +15,7 @@ export const Footer = () => {
           </li>
           <li className="inline-block pl-2">
             <a href="https://www.instagram.com/mais_limpo.higienizacoes/">
-              <i className="fab fa-instagram"></i> Instagram
+              <i className="fab fa-instagram "></i> Instagram
             </a>
           </li>
         </ul>
