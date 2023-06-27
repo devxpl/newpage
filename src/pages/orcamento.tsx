@@ -1,10 +1,9 @@
-import Form from '~/components/Orçamentos';
-
-const ContactForm = () => {
+import Form from './../components/Orçamentos';
+const Orçamentos = () => {
   return (
     <>
       <Form />
     </>
   );
 };
-export default ContactForm;
+export default Orçamentos;

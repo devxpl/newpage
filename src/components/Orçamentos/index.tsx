@@ -1,119 +1,106 @@
-import { useState } from 'react';
 const Form = () => {
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [whatsapp, setWhatsapp] = useState('');
-  const [mensagem, setMensagem] = useState('');
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const data = {
-      name: nome,
-      phone: whatsapp,
-      email: email,
-      message: mensagem,
-    };
-
-    if (typeof window !== 'undefined') {
-      fetch('', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          alert('Mensagem enviada com sucesso!');
-          setNome('');
-          setEmail('');
-          setWhatsapp('');
-          setMensagem('');
-        })
-        .catch((error) => {
-          console.error(error);
-          alert(
-            'Houve um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.',
-          );
-        });
-    }
-  };
-
   return (
-    <>
-      <form onSubmit={handleSubmit} className=" h-screen">
-        <div className="mb-4 mt-28  w-64 flex justify-center mx-auto">
-          <label className="block text-gray-700 font-bold mb-2" htmlFor="nome">
-            Nome:
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="nome"
-            type="text"
-            value={nome}
-            onChange={(event) => setNome(event.target.value)}
-            required
-          />
-        </div>
-        <div className="mb-4  w-64 flex justify-center mx-auto">
-          <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
-            Email:
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            required
-          />
-        </div>
-        <div className="mb-5 w-64 flex justify-center mx-auto ">
-          <label
-            className="block text-gray-700 font-bold mb-1"
-            htmlFor="whatsapp"
-          >
-            WhatsApp:
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="whatsapp"
-            type="text"
-            value={whatsapp}
-            onChange={(event) => setWhatsapp(event.target.value)}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            htmlFor="mensagem"
-            className="text-gray-700 text-sm font-bold mb-2 flex justify-center mx-auto"
-          >
-            Digite sua mensagem:
-          </label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            rows={3}
-            className="shadow appearance-none border rounded flex justify-center mx-auto w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-slate-300"
-            value={mensagem}
-            onChange={(event) => setMensagem(event.target.value)}
-            required
-          ></textarea>
+    <form
+      method="POST"
+      action="https://afonsobachelli.activehosted.com/proc.php"
+      id="_form_3_"
+      className="flex justify-center"
+      noValidate
+      data-styles-version="0"
+    >
+      <input type="hidden" name="u" value="3" />
+      <input type="hidden" name="f" value="3" />
+      <input type="hidden" name="s" />
+      <input type="hidden" name="c" value="0" />
+      <input type="hidden" name="m" value="0" />
+      <input type="hidden" name="act" value="sub" />
+      <input type="hidden" name="v" value="2" />
+      <input type="hidden" name="or" value="492f893d215c851c6ed6ab07c6d064f8" />
+
+      <div className="p-4">
+        <div className="text-center text-2xl font-bold text-gray-800 mb-6">
+          Preencher para orçamento
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="mb-6">
+          <label htmlFor="fullname" className="block mb-1">
+            Nome completo*
+          </label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Digite seu nome"
+            required
+            className="w-full rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+
+        <div className="mb-6">
+          <label htmlFor="email" className="block mb-1">
+            Email*
+          </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Digite seu email"
+            required
+            className="w-full rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+
+        <div className="mb-6">
+          <label htmlFor="customer_account" className="block mb-1">
+            Telefone*
+          </label>
+          <input
+            type="text"
+            id="customer_account"
+            name="customer_account"
+            placeholder="Digite seu número"
+            required
+            className="w-full rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+
+        <div className="mb-6">
+          <input type="hidden" id="ca[1][t]" name="ca[1][t]" value="text" />
+          <label htmlFor="ca[1][v]" className="block mb-1">
+            Descrição
+          </label>
+          <input
+            type="text"
+            id="ca[1][v]"
+            name="ca[1][v]"
+            placeholder="Descreva seu problema"
+            className="w-full rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+
+        <div className="mb-6">
+          <input
+            type="file"
+            id="image"
+            name="image"
+            accept="image/*"
+            className="mt-3"
+          />
+        </div>
+
+        <div className="mb-6">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            id="_form_3_submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             type="submit"
           >
             Enviar
           </button>
         </div>
-      </form>
-    </>
+      </div>
+
+      <div className="hidden"></div>
+    </form>
   );
 };
 export default Form;
