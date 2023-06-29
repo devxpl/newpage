@@ -22,7 +22,7 @@ export const App = ({ Component, pageProps }: AppProps): JSX.Element => {
           },
         ]}
       />
-      <main className="content bg-cyan-600 h-10">
+      <main className="content bg-cyan-600 h-10 ">
         <HeaderPage />
         <Component {...pageProps} />
         <Footer />

@@ -67,7 +67,7 @@ const ListProduct = () => {
     },
   ];
   return (
-    <div className="grid desktop:grid-cols-4 xsm:grid-cols-1 laptop:grid-cols-2 gap-4 pt-20">
+    <div className="grid desktop:grid-cols-4 xsm:grid-cols-1 laptop:grid-cols-2 gap-4 pt-20 bg-zinc-200 shadow-lg shadow-zinc-500/50">
       {products.map((product) => (
         <div key={product.id} className=" p-2 rounded-lg shadow">
           <img
